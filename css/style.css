@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap");
+
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  background-color: var(--white);
+  color: var(--dark-gray);
+  padding: 20px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.sillas {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sillas img {
+  width: 100%;
+  height: auto;
+}
+
+.info {
+  padding: 20px;
+  background-color: var(--white);
+  line-height: 1.5;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: var(--very-dark-gray);
+}
+
+@media (min-width: 768px) {
+  body {
+    max-width: 1440px;
+  }
+
+  .sillas {
+    grid-template-columns: 1fr 1fr; /* puse dos columnas */
+  }
+
+  /* coloque las imagenes en la primera columna */
+  .sillas img:nth-of-type(1),
+  .sillas img:nth-of-type(3) {
+    grid-column: 1 / 2;
+  }
+
+  /* coloque los textos en la segunda columna */
+  .info:nth-of-type(1),
+  .info:nth-of-type(2) {
+    grid-column: 2 / 3;
+  }
+}
