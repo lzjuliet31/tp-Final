@@ -256,9 +256,9 @@ img {
   .navigation-2 {
     display: flex;
   }
-  .navigation {
+  /* .navigation {
     display: none;
-  }
+  } */
   .hero {
     grid-template-columns: 1fr;
     height: auto;
@@ -347,5 +347,9 @@ img {
   }
   .button-arrow {
     padding: 5vw 5vw;
+  }
+  .navigation {
+    top: -4rem;
+    right: 0;
   }
 }
