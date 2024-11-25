@@ -5,33 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TP_Final</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <main class="sillas">
-      <img src="images/desktop-image-hero-1.jpg" alt="Imagen 1" />
-      <div class="info">
-        <h2>Discover innovative ways to decorate</h2>
-        <p>
-          We provide unmatched quality, comfort, and style for property owners
-          across the country. Our experts combine form and function in bringing
-          your vision to life. Create a room in your own style with our
-          collection and make your property a reflection of you and what you
-          love.
-        </p>
-      </div>
-      <img src="images/image-about-dark.jpg" alt="Imagen 2" />
-      <div class="info">
-        <h2>About our furniture</h2>
-        <p>
-          Our multifunctional collection blends design and function to suit your
-          individual taste. Make each room unique, or pick a cohesive theme that
-          best express your interests and what inspires you. Find the furniture
-          pieces you need, from traditional to contemporary styles or anything
-          in between. Product specialists are available to help you create your
-          dream space.
-        </p>
-      </div>
-      <img src="images/image-about-light.jpg" alt="Imagen 3" />
+    <main class="main-container">
+      <!-- Hero Section -->
+      <section class="hero">
+        <header class="header">
+          <nav class="nav">
+            <h1 class="logo">room</h1>
+            <ul class="menu">
+              <li><a href="#" class="menu-link">home</a></li>
+              <li><a href="#" class="menu-link">shop</a></li>
+              <li><a href="#" class="menu-link">about</a></li>
+              <li><a href="#" class="menu-link">contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero-image">
+          <img src="images/desktop-image-hero-1.jpg" alt="Hero Image" />
+        </div>
+        <article class="hero-content">
+          <h2>Discover innovative ways to decorate</h2>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <a href="#" class="shop-now">
+            SHOP NOW <span class="arrow">→</span>
+          </a>
+          <div class="navigation">
+            <button class="nav-btn prev" aria-label="Previous">‹</button>
+            <button class="nav-btn next" aria-label="Next">›</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- About Section -->
+      <section class="about">
+        <div class="about-image about-dark">
+          <img src="images/image-about-dark.jpg" alt="About Dark" />
+        </div>
+        <article class="about-content">
+          <h2>About our furniture</h2>
+          <p>
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best expresses your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </article>
+        <div class="about-image about-light">
+          <img src="images/image-about-light.jpg" alt="About Light" />
+        </div>
+      </section>
     </main>
   </body>
 </html>
