@@ -148,6 +148,7 @@ img {
 }
 
 .navigation {
+  height: 4rem;
   display: flex;
   position: absolute;
   bottom: 0;
@@ -275,7 +276,7 @@ img {
 
   .navigation {
     position: absolute;
-    top: 350px;
+    top: -4rem;
     right: 0;
     left: auto;
     z-index: 10;
@@ -323,6 +324,7 @@ img {
 
   .hero-content {
     padding: 2rem 1.5rem;
+    height: fit-content;
   }
 
   .hero-content h2 {
