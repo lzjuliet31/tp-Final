@@ -156,6 +156,9 @@ img {
 }
 
 .nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--black);
   border: none;
   color: var(--white);
@@ -164,6 +167,10 @@ img {
   font-size: 2rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.button-arrow {
+  padding: 0vw 0vw;
 }
 
 .nav-btn:hover {
@@ -232,45 +239,8 @@ img {
   .about {
     height: 250px;
   }
-}
-
-@media (max-width: 375px) {
-  .hamburger {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
-  .navigation-2 {
-    display: flex;
-  }
-  .hero-image {
-    height: 350px;
-  }
-
-  .hero-content {
-    padding: 2rem 1.5rem;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .about-image {
-    height: 250px;
-  }
-
-  .about-content {
-    padding: 2rem 1.5rem;
-  }
-
-  .nav {
-    text-align: center;
-    padding: 0 1.5rem;
-  }
-
-  .menu {
-    gap: 1rem;
+  .button-arrow {
+    padding: 0vw 0vw;
   }
 }
 
@@ -331,5 +301,51 @@ img {
   .logo {
     z-index: 5;
     margin: auto;
+  }
+
+  .button-arrow {
+    padding: 2.5vw 2.5vw;
+  }
+}
+@media (max-width: 390px) {
+  .hamburger {
+    display: block;
+  }
+  .menu {
+    display: none;
+  }
+  .navigation-2 {
+    display: flex;
+  }
+  .hero-image {
+    height: 350px;
+  }
+
+  .hero-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-image {
+    height: 250px;
+  }
+
+  .about-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .nav {
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+  .button-arrow {
+    padding: 5vw 5vw;
   }
 }
